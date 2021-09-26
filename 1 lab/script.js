@@ -12,13 +12,13 @@ function bind_ui_actions() {
 
 function calc_of_wages() {
 	// Getting money per hour and how much this guy is worked today
-	var money_input = document.getElementById("money_ph").value;
-	var hours_input = document.getElementById("hours").value;
+	let money_input = document.getElementById("money_ph").value;
+	let hours_input = document.getElementById("hours").value;
 	
 	// Calculating his salary
-	var salary = Math.abs(money_input * hours_input);
+	let salary = Math.abs(money_input * hours_input);
 	
 	// Print his 'big' salary
-	var span = document.getElementById("wages");
+	let span = document.getElementById("wages");
 	span.innerHTML = salary;
 }
